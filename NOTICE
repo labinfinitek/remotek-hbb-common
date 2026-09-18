@@ -1,0 +1,18 @@
+Questo repository e' una versione modificata di hbb_common
+(https://github.com/rustdesk/hbb_common), la libreria comune di RustDesk
+(https://github.com/rustdesk/rustdesk), Copyright (c) Purslane Ltd.,
+distribuita come parte di RustDesk sotto licenza GNU AGPL-3.0-or-later.
+"RustDesk" e' un marchio dei rispettivi titolari; Remotek e' un prodotto
+indipendente di Infinitek e non e' affiliato a Purslane Ltd.
+
+Modifiche: Copyright (c) 2026 Infinitek S.r.l. Prima modifica: 2026-09-18. Contenuto
+delle modifiche: vedi REMOTEK.md e `git log <commit upstream>..remotek`.
+
+Testo della licenza: file `LICENCE` di
+https://github.com/labinfinitek/remotek-client (upstream non include un file
+di licenza in questo repository).
+
+Sorgenti corrispondenti a ogni binario Remotek (AGPL-3.0 sez. 6 e 13): il tag
+`remotek-<versione upstream>-<n>` di questo repository insieme allo stesso tag
+di https://github.com/labinfinitek/remotek-client, che lo include come
+submodule `libs/hbb_common`.
