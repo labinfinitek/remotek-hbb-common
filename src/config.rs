@@ -74,7 +74,7 @@ lazy_static::lazy_static! {
     static ref USER_DEFAULT_CONFIG: RwLock<(UserDefaultConfig, Instant)> = RwLock::new((UserDefaultConfig::load(), Instant::now()));
     pub static ref NEW_STORED_PEER_CONFIG: Mutex<HashSet<String>> = Default::default();
     pub static ref DEFAULT_SETTINGS: RwLock<HashMap<String, String>> = RwLock::new(HashMap::from([(keys::OPTION_API_SERVER.to_owned(), "https://remote.infinitek.it".to_owned())]));
-    pub static ref OVERWRITE_SETTINGS: RwLock<HashMap<String, String>> = RwLock::new(HashMap::from([(keys::OPTION_ALLOW_AUTO_UPDATE.to_owned(), "N".to_owned())]));
+    pub static ref OVERWRITE_SETTINGS: RwLock<HashMap<String, String>> = RwLock::new(HashMap::from([(keys::OPTION_ALLOW_AUTO_UPDATE.to_owned(), "N".to_owned()), (keys::OPTION_APPROVE_MODE.to_owned(), "click".to_owned()), ("2fa".to_owned(), "".to_owned())]));
     pub static ref DEFAULT_DISPLAY_SETTINGS: RwLock<HashMap<String, String>> = Default::default();
     pub static ref OVERWRITE_DISPLAY_SETTINGS: RwLock<HashMap<String, String>> = Default::default();
     pub static ref DEFAULT_LOCAL_SETTINGS: RwLock<HashMap<String, String>> = Default::default();
