@@ -595,11 +595,9 @@ impl Config {
         suffix: &str,
     ) -> T {
         let file = Self::file_(suffix);
-        let cfg = load_path(file);
-        if suffix.is_empty() {
-            log::trace!("{:?}", cfg);
-        }
-        cfg
+        // Remotek (REM-2026-009): niente `log::trace!("{:?}", cfg)` qui, la
+        // `Config` porta chiave privata, salt, enc_id e password del PC.
+        load_path(file)
     }
 
     fn store_<T: serde::Serialize>(config: &T, suffix: &str) {
